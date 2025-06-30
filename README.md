@@ -1,33 +1,69 @@
 Soil Texture Classification Using Sentinel-2 and Landsat-9 Imagery with Machine Learning
-This repository contains all codes, essential files, and model outputs used in our project for soil texture classification over Semnan Province, Iran.
+
+This repository contains the essential code, models, and relevant files for our soil texture classification project conducted over Semnan Province, Iran, as part of our Master's project at Politecnico di Milano.
 
 📦 Project Structure
-/Sentinel2
-Contains codes, satellite imagery, extracted indices, ground truth data, trained models, and classification maps for the Sentinel-2 workflow.
 
-/Landsat9
-Contains similar materials for the Landsat-9 workflow.
+```
+/Sentinel2              Sentinel-2 data, codes, models, outputs  
+/Landsat9               Landsat-9 data, codes, models, outputs  
+/Feature_Importance_Plots  Feature importance visualizations  
+/Other                  Additional files, including SoilGrids points  
+```
 
-/Feature_Importance_Plots
-Contains visualizations of feature importance results from the models.
+🗂 Contents
 
-/Other
-Additional files, including SoilGrids ground truth points if applicable.
+Sentinel2 Folder:
+
+* Preprocessed satellite data (e.g., `Sentinel2_Ordered_FullBands.tif`)
+* Calculated indices (e.g., `Sentinel2_Bands_and_Indices.tif`)
+* Ground truth data (`GroundTruth_Sentinel2.csv`)
+* Python scripts for:
+
+  * Sensitivity and correlation analysis
+  * Model training and evaluation (RF & SVM)
+  * Image processing and classification
+* Trained model files (`*.pkl`) and classified maps (`*.tif`)
+
+Landsat9 Folder:
+
+* Similar structure as Sentinel-2 for Landsat-9 workflow
+* Includes band data, indices, ground truth, codes, models, and classification maps
+
+Feature\_Importance\_Plots:
+
+* Visual outputs showing feature importance for model interpretation
+
+Other:
+
+* `SoilGrids_Points.csv`: Contains the 3,000 ground truth soil texture points used for training and evaluation
 
 🛠 Methods
-Data Preprocessing: Radiometric & atmospheric corrections, spectral indices calculation
-Feature Screening: Correlation and regression analysis
-Machine Learning: Random Forest (RF) and Support Vector Machine (SVM)
-Model Evaluation: Accuracy, Kappa, Confusion Matrix
-Implemented in Python using libraries such as rasterio, numpy, pandas, scikit-learn, and others.
 
-🗂 Files of Interest
-.py files: Python scripts for processing, feature screening, model training, and evaluation
-.tif files: Processed satellite imagery and final classification maps
-.pkl files: Trained machine learning models
-.csv files: Ground truth data extracted from SoilGrids
+* **Data Preprocessing**: Clipping, atmospheric correction, spectral index calculation
+* **Feature Screening**: Correlation & regression analysis to select relevant features
+* **Machine Learning**: Random Forest (RF) and Support Vector Machine (SVM)
+* **Model Evaluation**: Overall Accuracy, Kappa Coefficient, Confusion Matrix
+* **Tools Used**: Python (`scikit-learn`, `pandas`, `rasterio`, etc.) and Google Earth Engine for data extraction
 
 📋 Notes
-All imagery and data are clipped to the study area.
-Codes were executed on local Python environments and Google Earth Engine was used for data extraction.
-This repository is intended for verification purposes to demonstrate the project was properly implemented as described
+
+* The `.pkl` files are saved trained models for reproducibility
+* `.tif` files include both raw and classified maps for visual validation
+* The codes are organized for both Sentinel-2 and Landsat-9 workflows separately
+* This repository is shared for project verification and academic purposes only
+
+---
+
+👨‍🏫 Project Details
+
+* **Project Title**: Soil Texture Classification Using Multitemporal Landsat-9 and Sentinel-2 Data Combined with Machine Learning Techniques
+* **Institution**: Politecnico di Milano - Master of Science in Geoinformatics Engineering
+* **Supervision**: Prof. Mariagrazia Fugini & Prof. Giovanna Venuti
+* **Authors**: Hafizullah Sarwary & Ali Moeinkhah
+
+---
+
+📝 Disclaimer
+
+The dataset and codes are provided strictly for project evaluation and academic use. Redistribution or commercial use is not permitted.
