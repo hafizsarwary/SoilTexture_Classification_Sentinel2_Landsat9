@@ -1,0 +1,1 @@
+# SoilTexture_Classification_Sentinel2_Landsat9
