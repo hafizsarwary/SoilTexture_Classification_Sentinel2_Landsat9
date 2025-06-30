@@ -1,0 +1,20 @@
+ENVI
+description = {
+  GEO-TIFF File Imported into ENVI [Mon Mar 03 12:21:05 2025]}
+samples = 560
+lines   = 304
+bands   = 19
+header offset = 0
+file type = TIFF
+data type = 4
+interleave = bip
+sensor type = Unknown
+byte order = 0
+read procedures = {idl_tiff_read_spatial, idl_tiff_read_spectral}
+map info = {UTM, 1.000, 1.000, 708765.000, 3868335.000, 3.0000000000e+001, 3.0000000000e+001, 39, North, WGS-84, units=Meters}
+coordinate system string = {PROJCS["UTM_Zone_39N",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",51.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]}
+wavelength units = Micrometers
+wavelength = {
+  0.443000,  0.482000,  0.562000,  0.655000,  5.000000,  6.000000,  7.000000,
+  8.000000,  9.000000, 10.000000, 11.000000, 12.000000, 13.000000, 14.000000,
+ 15.000000, 16.000000, 17.000000, 18.000000, 19.000000}
